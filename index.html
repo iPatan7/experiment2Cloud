@@ -1,1 +1,127 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiment-2 - Cloud Computing Lab</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Animated Gradient Background */
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            background: linear-gradient(45deg, #00A9E0, #0078D4); /* Light Azure blue to dark blue */
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+        }
+
+        /* Hover effects for containers */
+        .section-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Adjust the header to align icons and text */
+        .header-icons {
+            display: flex;
+            justify-content: center; /* Center the icons */
+            gap: 2rem;
+            padding-top: 2rem;
+        }
+
+        /* Extra large icon styling */
+        .icon-size {
+            font-size: 6rem; /* Super large icons */
+        }
+
+        /* Azure blue theme for icons */
+        .azure-icon {
+            background-color: #0078D4; /* Azure blue */
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .github-icon {
+            background-color: #24292F; /* Dark GitHub theme */
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+
+<body class="font-sans text-white">
+
+    <!-- Header Section with Title -->
+    <header class="py-8 text-center relative z-10">
+        <h1 class="text-5xl font-semibold tracking-wide">Experiment-2: Cloud Computing Lab</h1>
+    </header>
+
+    <!-- Professor Information Section -->
+    <div class="container mx-auto px-6 py-10 bg-transparent mb-10 mt-8">
+        <div class="section-container mb-8 bg-gray-900 bg-opacity-80 rounded-lg shadow-xl p-6 hover:shadow-2xl transition-all duration-300">
+            <div class="text-center">
+                <p class="text-lg font-semibold">Submitted to:</p>
+                <p class="text-2xl font-bold mb-4">Mr. Somen Nayak</p>
+                <p class="text-md">Assistant Professor</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container mx-auto px-6 py-10 bg-transparent mb-10 mt-8">
+
+        <!-- Student Information Section -->
+        <div class="section-container mb-8 bg-gray-900 bg-opacity-80 rounded-lg shadow-xl p-6 hover:shadow-2xl transition-all duration-300">
+            <h2 class="text-2xl font-semibold mb-4">Student Information</h2>
+            <p><strong>Student Name:</strong> Mohammad Iqbal Patan</p>
+            <p><strong>UID:</strong> 24MCC20081</p>
+            <p><strong>Branch:</strong> MCC</p>
+            <p><strong>Section/Group:</strong> A</p>
+            <p><strong>Semester:</strong> 2nd Sem</p>
+            <p><strong>Date of Performance:</strong> 17-Jan-2025</p>
+            <p><strong>Subject Name:</strong> Cloud Computing Lab</p>
+            <p><strong>Subject Code:</strong> 24CAP-682</p>
+
+            <!-- Icons within Student Information Section -->
+            <div class="header-icons mt-6">
+                <a href="https://github.com" target="_blank" class="github-icon transition transform hover:scale-150 duration-500">
+                    <i class="fab fa-github icon-size"></i>
+                </a>
+                <a href="https://azure.microsoft.com" target="_blank" class="azure-icon transition transform hover:scale-150 duration-500">
+                    <i class="fab fa-microsoft icon-size"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Aim Overview Section -->
+        <div class="section-container mb-8 bg-gray-900 bg-opacity-80 rounded-lg shadow-xl p-6 hover:shadow-2xl transition-all duration-300">
+            <h2 class="text-2xl font-semibold mb-4">Aim/Overview of the Practical</h2>
+            <p>The goal of this practical is to create a static web app using Microsoft Azure and host it by publishing the app through GitHub. This involves several steps, including using GitHub for version control and Microsoft Azure for deployment.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-6 text-center mt-10 shadow-md">
+        <p>&copy; 2025 Cloud Computing Lab - Experiment 2</p>
+    </footer>
+
+</body>
+</html>
